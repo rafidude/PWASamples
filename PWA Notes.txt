@@ -1,0 +1,56 @@
+PWA Notes
+Progressive: work for every user, regardless of browser choice because they’re built with progressive enhancement from the start.
+Responsive: fit any form factor, desktop, mobile, tablet, or whatever is next.
+Connectivity independent: enhanced with service workers to work offline or on low quality networks.
+App-like: use the app shell model to provide app-style navigation and interactions.
+Fresh: always up-to-date thanks to the service worker update process.
+Safe: served via Transport Level Security to prevent snooping and ensure content hasn’t been tampered with.
+Discoverable: are identifiable as “applications” thanks to App Manifests and service worker registration scope allowing search engines to find them.
+Re-engageable: make re-engagement easy through features like push notifications.
+Installable: allow users to “keep” apps they find most useful on their home screen without the hassle of an app store.
+Linkable: easily share via URL and not require complex installation.
+
+Manifest
+A JSON file supports the "Discoverable" item and allows for better "add to home screen/desktop" support.
+
+Service Worker
+The Service Worker is what allows for the more advanced aspects of PWAs like caching, push notifications, and background sync
+
+AWS AppSync - Creating a Serverless GraphQL Backend
+https://www.youtube.com/user/boyindasouth/videos
+
+
+PWAs: building bridges to mobile, desktop, and native (Google I/O '18)
+https://www.youtube.com/watch?v=NITk4kXMQDw
+
+PWAs help you build fast, resilient, and engaging web applications that delight your users.
+A PWA should be all of these things:
+Responsive
+Connectivity-independent
+Interactive with a feel like a native app’s  Always up-to-date
+Safe
+Discoverable
+Re-engageable
+Installable
+Linkable
+
+PWAs point to a file known as a mani- fest file that contains information about the website, including its icons, back-ground screen, colors, and default orientation. 
+A PWA should also be able to work offline. Using Service Workers, you can selectively cache parts of your site to provide an offline experience.
+Or imagine your web app is for a charity that has volunteers working in areas with limited or no con- nectivity. The features of a PWA would allow you to build an offline app that lets them collect information in the field with no network connection. As soon as they come back to the office or to an area with connectivity, the data can sync back to the server.
+PWAs help you achieve building for the next billion people by building fast, lean web applications.
+
+Service Workers are worker scripts that run in the background. Written in JavaScript with a few lines of code, they enable a developer to intercept network requests, handle push messages, and perform many other tasks.
+Service Workers give you total control of each and every web request made from your site. They’re event-driven, and you can pick and choose the events you want to tap into. 
+A Service Worker does the following:
+Runs in its own global script context
+Isn’t tied to a particular web page
+Isn’t able to modify elements in the web page—it has no DOM access 
+Is HTTPS only
+
+A Service Worker is run in a worker context, which means it has no DOM access and runs on a different thread from the main JavaScript that powers your app, so it’s not blocking. 
+
+When you load a page for the first time without an active Service Worker, the Ser- vice Worker won’t handle any requests coming or going. Only after it’s been installed and activated is it in control of its own scope. This means the logic inside the Service Worker will only kick in if you refresh the page or navigate to another page.
+
+
+
+
